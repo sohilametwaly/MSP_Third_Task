@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  background-color: #d0d2d7;
+}
+
+.container {
+  background-color: #d0d2d7;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 300px auto;
+  grid-template-rows: 100px auto;
+  row-gap: 15px;
+  column-gap: 25px;
+  grid-template-areas: "nav nav" "aside main";
+}
+
+nav {
+  grid-area: nav;
+  background-color: #1f43c3;
+  color: white;
+  font-size: 50px;
+  padding: 20px;
+}
+
+aside {
+  grid-area: aside;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 15px;
+  margin: 0 auto;
+}
+
+form {
+  display: grid;
+  width: 180px;
+  grid-template-columns: repeat(2, auto);
+}
+
+footer {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 120px auto;
+  grid-template-rows: repeat(2, auto);
+  row-gap: 6px;
+  padding-top: 40px;
+}
+
+#range_price {
+  width: 180px;
+}
+
+.category_container {
+  background-color: white;
+  width: 250px;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 0px 20px;
+  height: 550px;
+  box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.241);
+}
+
+.product {
+  margin: 5px;
+  background-color: royalblue;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.241);
+  position: relative;
+  height: 350px;
+}
+
+.image {
+  padding: 20px;
+  width: 250px;
+  border-radius: 30px;
+  height: 150px;
+}
+
+.product2 {
+  grid-column: span 2;
+  display: grid;
+  width: 600px;
+  grid-template-areas: "span_img span_detail";
+}
+
+.details p {
+  color: rgba(0, 0, 0, 0.418);
+}
+
+.details {
+  padding: 20px;
+}
+
+.price {
+  background-color: #1bc24f;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  position: absolute;
+  box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.241) inset;
+  top: 26px;
+  right: 23px;
+  font-size: 11px;
+}
+
+.span_img {
+  grid-area: span_img;
+  position: relative;
+}
+
+.span_detail {
+  grid-area: span_detail;
+  position: relative;
+}
+
+.span_img .image {
+  height: 93%;
+  width: 91%;
+  padding: 13px;
+}
+
+.span_img .price {
+  top: 21px;
+  right: 18px;
+}
+
+.offer span {
+  color: red;
+}
+
+.span_detail .suggest {
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  width: 175px;
+  position: absolute;
+  right: 10px;
+}
+
+.add {
+  background-color: #1bc24f;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 98%;
+  border: none;
+  margin-bottom: 5px;
+  font-size: large;
+}
+
+.see {
+  background-color: #1f43c3;
+  color: white;
+  padding: 7px;
+  border-radius: 10px;
+  width: 98%;
+  border: none;
+  font-size: large;
+}
